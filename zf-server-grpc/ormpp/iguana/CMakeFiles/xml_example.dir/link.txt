@@ -1,0 +1,1 @@
+/usr/bin/c++   -pthread -std=c++17  -rdynamic CMakeFiles/xml_example.dir/example/xml_example.cpp.o  -o xml_example  -ldl

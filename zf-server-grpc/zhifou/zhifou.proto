@@ -1,0 +1,80 @@
+syntax = "proto3";
+
+option java_package = "zhifou";                     //指定生成的java类所在的包
+option java_multiple_files = true;                  //允许生成多个java类
+//option java_outer_classname = "ZhifouJavaClient";   //指定生成的java类文件名称
+
+package personalinfo;
+
+service PersonalInfo
+{
+  //获取我的提问
+  rpc GetMyQuestion(User) returns (stream Question){}
+
+  //获取我的回答
+  rpc GetMyAnswer(User) returns (stream Answer){}
+
+  //获取我的文章
+  rpc GetMyArticle(User) returns (stream Article){}
+
+  //获取我的粉丝
+  rpc GetFans(User) returns (stream Fans){}
+
+  //获取我关注的人
+  rpc GetFollowing(User) returns (stream Followings){}
+
+  //获取关注的问题
+  rpc GetFavoriteQuestion(User) returns (stream Question){}
+
+  //获取我收藏的文章
+  rpc GetCollectArticle(User) returns (stream Article){}
+
+  //获取我收藏的回答
+  rpc GetCollectAnswer(User) returns (stream Answer){}
+
+}
+
+message User
+{
+  string userId = 1;
+}
+
+message Article
+{
+  string uuid = 1;
+  string title = 2;
+  string username = 3;
+  string createTime = 4;
+}
+
+message Question
+{
+  string uuid = 1;
+  string title = 2;
+  string username = 3;
+  string createTime = 4;
+}
+
+message Answer
+{
+  string answerId = 1;
+  string questionId = 2;
+  string questionTitle = 3;
+  string username = 4;
+  string createTime = 5;
+}
+
+message Fans
+{
+  string uuid = 1;
+  string username = 2;
+}
+
+message Followings
+{
+  string uuid = 1;
+  string username = 2;
+}
+
+
+

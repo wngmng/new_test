@@ -1,0 +1,1 @@
+/usr/bin/c++   -g -pthread -std=c++17  -rdynamic CMakeFiles/ormpp.dir/test.cpp.o  -o ormpp  -L/home/meng/archforce/zhifou/ormpp/ormpp/libs -Wl,-rpath,/home/meng/archforce/zhifou/ormpp/ormpp/libs -ljson -lmysqlclient 

@@ -1,0 +1,1 @@
+/usr/bin/c++   -pthread -std=c++17  -rdynamic CMakeFiles/example.dir/example/example.cpp.o  -o example  -ldl

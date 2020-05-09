@@ -1,0 +1,3 @@
+/home/meng/archforce/zhifou/ormpp/ormpp/CMakeFiles/rebuild_cache.dir
+/home/meng/archforce/zhifou/ormpp/ormpp/CMakeFiles/ormpp.dir
+/home/meng/archforce/zhifou/ormpp/ormpp/CMakeFiles/edit_cache.dir
